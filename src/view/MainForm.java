@@ -11,7 +11,6 @@ import java.awt.event.ActionListener;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Scanner;
 
 public class MainForm extends JFrame {
     private File path = new File("C:\\Users\\Алемор\\Desktop\\Саша\\Обучение\\ООП\\LW_5\\OOP_LW_5");
@@ -332,10 +331,6 @@ public class MainForm extends JFrame {
         });
 
         fileChooser = new JFileChooser(path);
-    }
-
-    public void showErrorWrongFormat(){
-        JOptionPane.showMessageDialog(MainForm.this,"Wrong format");;
     }
     public void start(){
         aboutMenu.add(aboutProgramItem);

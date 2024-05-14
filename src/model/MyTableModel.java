@@ -227,12 +227,6 @@ public class MyTableModel extends AbstractTableModel {
         this.fireTableDataChanged();
     }
 
-    public void addRow() {
-        sizeRow += 1;
-        this.getRowCount();
-        this.fireTableDataChanged();
-    }
-
     public void deleteRow(int selectedRow) {
         this.products.remove(selectedRow);
         sizeRow -= 1;
